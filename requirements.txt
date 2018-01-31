@@ -1,0 +1,5 @@
+nltk
+sklearn
+gensim
+xgboost
+keras
