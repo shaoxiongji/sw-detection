@@ -24,7 +24,7 @@ def load_df(dataset_name):
         file_name = './data/twitter/twitter.xlsx'
         df = pd.read_excel(file_name)
         return df
-    elif dataset_name in ['popular', 'AskReddit', 'books', 'gaming', 'movies']:
+    elif dataset_name in ['popular', 'all', 'AskReddit', 'books', 'gaming', 'movies', 'Jokes']:
         file_name = './data/reddit/{}.csv'.format(dataset_name)
         df = pd.read_csv(file_name)
         return df
@@ -56,6 +56,13 @@ def load_data(dataset_name):
         X = df['tweets'].as_matrix()
         y = df['y'].as_matrix()
         return X, y
+    elif dataset_name in ['popular', 'all', 'AskReddit', 'books', 'gaming', 'movies', 'Jokes']:
+        file_name = './data/reddit/{}.csv'.format(dataset_name)
+        df = pd.read_csv(file_name)
+        X1 = df['title'].as_matrix()
+        X2 = df['usertext'].as_matrix()
+        y = df['y'].as_matrix()
+        return X1, X2, y
     else:
         raise ValueError("Error: unrecognized dataset")
 
