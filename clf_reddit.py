@@ -50,8 +50,8 @@ def f_basic(data):
 
 def f_liwc(subreddit):
     print("Processing LIWC features ...")
-    liwc_title = pd.read_csv('./liwc_features/liwc_{}_title.csv'.format(subreddit))
-    liwc_body = pd.read_csv('./liwc_features/liwc_{}_body.csv'.format(subreddit))
+    liwc_title = pd.read_csv('./data/liwc_features/liwc_{}_title.csv'.format(subreddit))
+    liwc_body = pd.read_csv('./data/liwc_features/liwc_{}_body.csv'.format(subreddit))
     liwc = pd.concat((liwc_title[liwc_title.columns[4:]], liwc_body[liwc_body.columns[4:]]), axis=1)
     return liwc
 
@@ -73,7 +73,7 @@ def get_all_tags(data):
     return tags_all
 
 
-def wf_pos(data, tags_all):
+def f_pos(data, tags_all):
     tag_dict, tag_count, tag_count_body = {}, {}, {}
     for tag in tqdm(tags_all):
         tag_dict[tag] = 0
