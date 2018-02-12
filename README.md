@@ -1,7 +1,5 @@
 # Suicidal Ideation Detection in Online User Contents
 
-This project is the code for the paper "Suicidal Ideation Detection in Online User Contents".
-
 # Getting Started
 Due to the anonymity of online media and social networks, people tend to express their feelings and sufferings in online communities.
 In order to prevent suicide, it is necessary to detect suicide-related posts and users' suicide ideation in cyberspace by natural language processing methods.
@@ -17,7 +15,7 @@ The Reddit word cloud (left) and Twitter word cloud (right) are shown as follow:
 <img width="400" alt="Reddit word cloud" src="https://github.com/shaoxiongji/sw-detection/blob/master/output/reddit.jpg"><img width="400" alt="Twitter word cloud" src="https://github.com/shaoxiongji/sw-detection/blob/master/output/twitter.jpg">
 
 However, original text data can not be provided for the consideration of users privacy.
-If you'd like to collect data, please refer this repository: [web spider](https://github.com/shaoxiongji/webspider).
+If you'd like to collect data, please refer this repository: [web spider](https://github.com/shaoxiongji/webspider-eda).
 These two xlsx files in this project contain some sample data composed by the author.
 *Notice: when running the scripts, please replace them with your own data.*
 
