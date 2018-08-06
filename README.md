@@ -23,8 +23,9 @@ The [UMD Reddit Suicidality Dataset](http://users.umiacs.umd.edu/~resnik/umd_red
 > Han-Chin Shing, Suraj Nair, Ayah Zirikly, Meir Friedenberg, Hal Daumé III, and Philip Resnik, "[Expert, Crowdsourced, and Machine Assessment of Suicide Risk via Online Postings](http://aclweb.org/anthology/W18-0603)", Proceedings of the Fifth Workshop on Computational Linguistics and Clinical Psychology: From Keyboard to Clinic, pages 25–36, New Orleans, Louisiana, June 5, 2018.
 
 If you'd like to collect data, please refer this repository: [web spider](https://github.com/shaoxiongji/webspider-eda).
+
 These two xlsx files in this project contain some sample data composed by the author.
-*Notice: when running the scripts, please replace them with your own data.*
+*Notice: when running the scripts, please replace them with requested data or your own data.*
 
 # Features Precessing
 We extracted six sets of features, i.e., statistical features, POS counts, TF-IDF, Topics probability, [LIWC](http://liwc.wpengine.com), and pre-trained [word2vec](https://radimrehurek.com/gensim/models/word2vec.html) word embedding.
