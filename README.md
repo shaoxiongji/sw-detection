@@ -14,7 +14,14 @@ The Reddit word cloud (left) and Twitter word cloud (right) are shown as follow:
 
 <img width="400" alt="Reddit word cloud" src="https://github.com/shaoxiongji/sw-detection/blob/master/output/reddit.jpg"><img width="400" alt="Twitter word cloud" src="https://github.com/shaoxiongji/sw-detection/blob/master/output/twitter.jpg">
 
-However, original text data can not be provided for the consideration of users privacy.
+The original text data can not be provided publicly for the consideration of users privacy.
+Please send a request for data access shaox.ji@gmail.com. State your contact information and purpose briefly, and the following aggreement.
+> I agree to use data only for non-commercial purposes, and to protect the privacy of any individual's personal information that I access.
+
+
+The [UMD Reddit Suicidality Dataset](http://users.umiacs.umd.edu/~resnik/umd_reddit_suicidality_dataset.html) published in June 5, 2018 is also highly recommended for research on suicidality and suicide prevention, which was constructed from the [2015 Full Reddit Submission Corpus](https://www.reddit.com/r/datasets/comments/3mg812/full_reddit_submission_corpus_now_available_2006/)
+> Han-Chin Shing, Suraj Nair, Ayah Zirikly, Meir Friedenberg, Hal Daumé III, and Philip Resnik, "[Expert, Crowdsourced, and Machine Assessment of Suicide Risk via Online Postings](http://aclweb.org/anthology/W18-0603)", Proceedings of the Fifth Workshop on Computational Linguistics and Clinical Psychology: From Keyboard to Clinic, pages 25–36, New Orleans, Louisiana, June 5, 2018.
+
 If you'd like to collect data, please refer this repository: [web spider](https://github.com/shaoxiongji/webspider-eda).
 These two xlsx files in this project contain some sample data composed by the author.
 *Notice: when running the scripts, please replace them with your own data.*
