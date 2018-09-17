@@ -8,19 +8,13 @@ We focus on the online community called Reddit and the social networking website
 
 # Datasets
 We collect two sets of data from Reddit and Twitter.
-The Reddit data set includes 3,549 suicidal ideation samples and a number of non-suicide texts (20k). The Twitter dataset has totally 10k tweets with 594 tweets (around 6\%) with suicidal ideation.
+The Reddit data set includes 5,326 suicidal ideation samples and a number of non-suicide texts (20k). The Twitter dataset has totally 10k tweets with 594 tweets (around 6\%) with suicidal ideation.
 
 The Reddit word cloud (left) and Twitter word cloud (right) are shown as follow:
 
 <img width="400" alt="Reddit word cloud" src="https://github.com/shaoxiongji/sw-detection/blob/master/output/reddit.jpg"><img width="400" alt="Twitter word cloud" src="https://github.com/shaoxiongji/sw-detection/blob/master/output/twitter.jpg">
 
-The original text data can not be provided publicly for the consideration of users privacy.
-Please send a request for data access shaox.ji@gmail.com. State your contact information and purpose briefly, and the following aggreement.
-> I agree to use data only for non-commercial purposes, and to protect the privacy of any individual's personal information that I access.
-
-
-The [UMD Reddit Suicidality Dataset](http://users.umiacs.umd.edu/~resnik/umd_reddit_suicidality_dataset.html) published in June 5, 2018 is also highly recommended for research on suicidality and suicide prevention, which was constructed from the [2015 Full Reddit Submission Corpus](https://www.reddit.com/r/datasets/comments/3mg812/full_reddit_submission_corpus_now_available_2006/)
-> Han-Chin Shing, Suraj Nair, Ayah Zirikly, Meir Friedenberg, Hal Daumé III, and Philip Resnik, "[Expert, Crowdsourced, and Machine Assessment of Suicide Risk via Online Postings](http://aclweb.org/anthology/W18-0603)", Proceedings of the Fifth Workshop on Computational Linguistics and Clinical Psychology: From Keyboard to Clinic, pages 25–36, New Orleans, Louisiana, June 5, 2018.
+The original text data can not be provided publicly for the consideration of users privacy. It will be provided by request, see the data availability in our paper.
 
 If you'd like to collect data, please refer this repository: [web spider](https://github.com/shaoxiongji/webspider-eda).
 
@@ -49,3 +43,32 @@ The LSTM model for Reddit and Twitter by
 `python lstm_word2vec.py` and `python lstm_word2vec_reddit.py`.
 
 These scripts were written in Python 3.6. Please check the requirements before running.
+
+# Results
+Part of experimental results as below on Reddit SuicideWatch vs. all dataset with 5,326 posts containing suicidal ideation.
+ 
+| Model	| Acc.	    | Pre.	    | Rec.      |	F1	    | AUC      |
+|------ | ------    | ------    | ------    | ------    | ------   |
+|RF	    | 0.941440  | 0.958286	| 0.906931	| 0.931861	| 0.986029 |
+|GBDT	| 0.961845	| 0.964161	| 0.948894	| 0.956437	| 0.991860 |
+|XGB	| 0.965660  | 0.969280	| 0.952525	| 0.960796	| 0.993403 |
+|LSTM	| 0.961098	| 0.959305	| 0.952117	| 0.955449	| 0.992637 |
+
+# Cite
+Please cite our paper if you use this repo.
+```
+@article{ji2018supervised,
+  title={Supervised Learning for Suicidal Ideation Detection in Online User Content},
+  author={Ji, Shaoxiong and Yu, Celina Ping and Fung, Sai-fu and Pan, Shirui and Long, Guodong},
+  journal={Complexity},
+  volume={2018},
+  year={2018},
+  publisher={Hindawi}
+}
+```
+
+There is also a remarkable work from University of Maryland which was finished almost at the same period of our work.
+
+> Han-Chin Shing, Suraj Nair, Ayah Zirikly, Meir Friedenberg, Hal Daumé III, and Philip Resnik, "[Expert, Crowdsourced, and Machine Assessment of Suicide Risk via Online Postings](http://aclweb.org/anthology/W18-0603)", Proceedings of the Fifth Workshop on Computational Linguistics and Clinical Psychology: From Keyboard to Clinic, pages 25–36, New Orleans, Louisiana, June 5, 2018.
+
+The [UMD Reddit Suicidality Dataset](http://users.umiacs.umd.edu/~resnik/umd_reddit_suicidality_dataset.html) published in June 5, 2018 is highly recommended for research on suicidality and suicide prevention, which was constructed from the [2015 Full Reddit Submission Corpus](https://www.reddit.com/r/datasets/comments/3mg812/full_reddit_submission_corpus_now_available_2006/)
