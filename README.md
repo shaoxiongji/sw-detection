@@ -16,6 +16,8 @@ The Reddit word cloud (left) and Twitter word cloud (right) are shown as follow:
 
 The original text data can not be provided publicly for the consideration of users privacy. It will be provided by request, see the data availability in our paper.
 
+**Update** this dataset is not available now.
+
 If you'd like to collect data, please refer this repository: [web spider](https://github.com/shaoxiongji/webspider-eda).
 
 These two xlsx files in this project contain some sample data composed by the author.
