@@ -16,7 +16,7 @@ The Reddit word cloud (left) and Twitter word cloud (right) are shown as follow:
 
 The original text data can not be provided publicly for the consideration of users privacy. It will be provided by request, see the data availability in our paper.
 
-**Update** this dataset is not available now.
+**Notice** Only Reddit data is available for sharing. Please contact me using your _institutional email_ to identify yourself when request for it. Due to a large number of messages, I may miss you message or it may been misclassified as spam. Sorry for that. 
 
 If you'd like to collect data, please refer this repository: [web spider](https://github.com/shaoxiongji/webspider-eda).
 
@@ -56,7 +56,7 @@ Part of experimental results as below on Reddit SuicideWatch vs. all dataset wit
 |XGB	| 0.965660  | 0.969280	| 0.952525	| 0.960796	| 0.993403 |
 |LSTM	| 0.961098	| 0.959305	| 0.952117	| 0.955449	| 0.992637 |
 
-# Cite
+# References
 Please cite our paper if you use this repo.
 ```
 @article{ji2018supervised,
@@ -67,6 +67,13 @@ Please cite our paper if you use this repo.
   year={2018},
   publisher={Hindawi}
 }
+
+@article{ji2020suicidal,
+  title={Suicidal Ideation Detection: A Review of Machine Learning Methods and Applications},
+  author={Ji, Shaoxiong and Pan, Shirui and Li, Xue and Cambria, Erik and Long, Guodong and Huang, Zi},
+  journal={arXiv preprint arXiv:1910.12611},
+  year={2020}
+}
 ```
 
 There is also a remarkable work from University of Maryland which was finished almost at the same period of our work.
@@ -74,3 +81,6 @@ There is also a remarkable work from University of Maryland which was finished a
 > Han-Chin Shing, Suraj Nair, Ayah Zirikly, Meir Friedenberg, Hal Daumé III, and Philip Resnik, "[Expert, Crowdsourced, and Machine Assessment of Suicide Risk via Online Postings](http://aclweb.org/anthology/W18-0603)", Proceedings of the Fifth Workshop on Computational Linguistics and Clinical Psychology: From Keyboard to Clinic, pages 25–36, New Orleans, Louisiana, June 5, 2018.
 
 The [UMD Reddit Suicidality Dataset](http://users.umiacs.umd.edu/~resnik/umd_reddit_suicidality_dataset.html) published in June 5, 2018 is highly recommended for research on suicidality and suicide prevention, which was constructed from the [2015 Full Reddit Submission Corpus](https://www.reddit.com/r/datasets/comments/3mg812/full_reddit_submission_corpus_now_available_2006/)
+
+The following publication(s) use this dataset. 
+> Tadesse, M. M., Lin, H., Xu, B., & Yang, L. (2020). Detection of Suicide Ideation in Social Media Forums Using Deep Learning. Algorithms, 13(1), 7.
