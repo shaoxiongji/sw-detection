@@ -1,5 +1,7 @@
 # Suicidal Ideation Detection in Online User Contents
 
+Project archived. No updates, no dataset licensing. Please consider using UMD Suicidality dataset instead.
+
 # Getting Started
 Due to the anonymity of online media and social networks, people tend to express their feelings and sufferings in online communities.
 In order to prevent suicide, it is necessary to detect suicide-related posts and users' suicide ideation in cyberspace by natural language processing methods.
